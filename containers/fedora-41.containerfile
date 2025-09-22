@@ -19,8 +19,10 @@ RUN echo v1 \
         openssl \
         openssl-devel \
         python3-devel \
+        python3-tox \
         python3-pip \
         python3-setuptools \
+        python3-pytest-timeout \
         python3-systemd \
         qemu-img \
         qemu-kvm \
