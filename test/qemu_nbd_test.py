@@ -484,6 +484,8 @@ def test_block_signals(tmpdir):
 
 @pytest.mark.parametrize("fmt", ["raw", "qcow2"])
 def test_block_device(tmpdir, user_block, fmt):
+    print("The path " + user_block.path)
+    print("The tmpdir " + str(tmpdir))
     qemu_img.create(user_block.path, fmt, size=1024**3)
 
     offset = 123456

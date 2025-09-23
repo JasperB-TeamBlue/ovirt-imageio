@@ -1,0 +1,5 @@
+version = 1
+SPDX-PackageName = "ovirt-imageio"
+SPDX-PackageSupplier = "oVirt <users@ovirt.org>"
+SPDX-PackageDownloadLocation = "https://github.com/oVirt/ovirt-imageio"
+annotations = []
