@@ -486,9 +486,9 @@ def test_block_signals(tmpdir):
 def test_block_device(tmpdir, user_block, fmt):
     print("The path " + user_block.path)
     print("The tmpdir " + str(tmpdir))
-    qemu_img.create(user_block.path, fmt, size=1073741824)
+    qemu_img.create(user_block.path, fmt, size=3072)
 
-    offset = 123456
+    offset = 123
     data = b"unaligned io works"
     addr = nbd.UnixAddress(tmpdir.join("sock"))
 
