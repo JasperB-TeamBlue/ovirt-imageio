@@ -486,7 +486,7 @@ def test_block_signals(tmpdir):
 def test_block_device(tmpdir, user_block, fmt):
     print("The path " + user_block.path)
     print("The tmpdir " + str(tmpdir))
-    qemu_img.create(user_block.path, fmt, size=1024**3)
+    qemu_img.create(user_block.path, fmt, size=1073741824)
 
     offset = 123456
     data = b"unaligned io works"
