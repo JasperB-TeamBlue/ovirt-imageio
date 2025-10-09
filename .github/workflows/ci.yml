@@ -5,6 +5,7 @@ name: CI
 on:
 - push
 - pull_request
+- workflow_dispatch
 env:
   EXPORT_DIR: exported-artifacts
 jobs:
